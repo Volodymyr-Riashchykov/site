@@ -1,0 +1,351 @@
+.header {
+  position: relative;
+  // border-bottom: 1px solid $bottom-line;
+}
+// .mob__list {
+//   align-items: center;
+//   @media screen and (max-width: $tablet - 1px) {
+//     justify-content: space-between;
+//   }
+// }
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  fill: $primary-color;
+}
+.logo__icon {
+  z-index: 4;
+}
+.mob__btn {
+  // display: none;
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  // margin: 10px;
+  display: flex;
+  padding: 10px 0;
+  background-color: inherit;
+  z-index: 4;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+  & .icon__close {
+    display: none;
+  }
+  &.is-open .icon__close {
+    display: block;
+  }
+  &.is-open .icon__menu {
+    display: none;
+  }
+}
+.header__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 100px 40px;
+
+  font-weight: 500;
+  font-size: 6vw;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  background-color: $primary-color;
+  transform: translateX(100%) scale(0);
+  transition: transform $trans-var, scale $trans-var;
+  z-index: 3;
+  overflow-y: scroll;
+  background-image: linear-gradient(to right, $mob-gradient, $mob-gradient),
+    url(../../images/зодиак.jpg);
+
+  @media screen and (max-width: 767.98px) {
+    &.is-open {
+      transform: translateX(0) scale(1);
+    }
+  }
+}
+.header__list {
+  display: none;
+  padding-left: 30px;
+
+  font-size: 4vw;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $text-color;
+  // &.item-open {
+  //   display: block;
+  // }
+}
+.header__btn:hover + .header__list {
+  display: block;
+}
+// .header__i a {
+//   display: block;
+// }
+.header__btn {
+  text-align: start;
+}
+.headr__it:not(:last-child) {
+  margin-bottom: 20px;
+}
+.header__cont {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+
+    .header__nav {
+      margin-left: 25px;
+      padding: 0;
+      height: auto;
+      transform: translateX(0) scale(1);
+      position: static;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      background-color: inherit;
+      color: $icon-color;
+      background-image: none;
+    }
+    .header__l {
+      display: flex;
+    }
+    .headr__it:not(:last-child) {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+    .header__btn:hover + .header__list {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .header__nav {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+    }
+  }
+}
+// .header__link {
+//   display: block;
+//   text-decoration: none;
+//   color: $secondary-color;
+// }
+// .header__item {
+//   position: relative;
+// }
+// .header__addr {
+//   color: $text-color;
+//   text-decoration: none;
+//   fill: $text-color;
+// }
+// .header__menu {
+//   display: flex;
+//   list-style-type: none;
+//   font-weight: 500;
+// }
+// body.menu__cotainer.is-open {
+//   overflow: hidden;
+// }
+
+// .menu__cotainer {
+//   @media screen and (max-width: $tablet - 1px) {
+//     display: none;
+//     position: fixed;
+//     left: 0;
+//     top: 0;
+//     padding: 48px 40px;
+//     width: 100%;
+//     background-color: $primary-color;
+
+//     &.is-open {
+//       display: flex;
+//       flex-direction: column;
+//       // margin: 0 auto;
+
+//       width: 100vw;
+//       height: 100vh;
+//       z-index: 3;
+//       overflow-y: scroll;
+//     }
+//     .header__list {
+//       // display: flex;
+//       display: block;
+//     }
+//     .header__item:not(:first-child) {
+//       // margin-left: 50px;
+//       margin-top: 32px;
+//     }
+//     .header__tel {
+//       margin-bottom: 32px;
+//       font-size: 7vw;
+//       line-height: 1.17;
+//       letter-spacing: 0.02em;
+//       color: #2196f3;
+
+//       @media screen and (min-width: $mobile) {
+//         font-size: 34px;
+//       }
+//     }
+//     .header__mail {
+//       font-size: 5vw;
+//       line-height: 1.17;
+
+//       @media screen and (min-width: $mobile) {
+//         font-size: 24px;
+//       }
+//     }
+//     .header__menu {
+//       flex-direction: column-reverse;
+//       margin-bottom: 64px;
+//       margin-top: auto;
+//       @media screen and (min-height: 796px) {
+//         margin-top: 300px;
+//       }
+//     }
+//     .header__icon {
+//       display: none;
+//     }
+//     .net {
+//       font-weight: 500;
+//     }
+//   }
+//   @media screen and (min-width: $tablet) {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 100%;
+//     .net {
+//       display: none;
+//     }
+//     .header__nav {
+//       display: flex;
+//       margin: 0 0 0 0;
+//       margin-left: 88px;
+//       font-size: 14px;
+//       line-height: 1.14;
+//     }
+//     // .mob__list {
+//     //   justify-content: flex-start;
+//     // }
+//     .header__list {
+//       display: flex;
+//       align-items: center;
+//       // display: block;
+//     }
+//     .header__item:not(:first-child) {
+//       margin-left: 50px;
+//       // margin-top: 32px;
+//     }
+//     .header__tel,
+//     .header__mail,
+//     .menu__addr,
+//     .header__addr {
+//       display: flex;
+//       align-items: center;
+//     }
+//     .header__mail,
+//     .header__tel {
+//       // margin-bottom: 32px;
+//       font-size: 12px;
+//       line-height: 1.16;
+//       letter-spacing: 0.02em;
+//       // color: #2196f3;
+//     }
+//     .header__mail {
+//       margin-bottom: 10px;
+//       padding-top: 21px;
+//     }
+//     .header__tel {
+//       padding-bottom: 21px;
+//     }
+//     .header__menu {
+//       flex-direction: column;
+//       justify-content: center;
+//       margin: 0 0 0 auto;
+//     }
+//     .menu__item {
+//       fill: $text-color;
+//     }
+//     .header__link {
+//       @include pad();
+//     }
+//     .header__icon {
+//       margin-right: 8px;
+//     }
+//     .icon__mail {
+//       width: 14px;
+//       height: 10px;
+//     }
+//     .icon__tel {
+//       width: 10px;
+//       height: 14px;
+//     }
+//   }
+//   @media screen and (min-width: $desktop) {
+//     width: 100%;
+//     .header__studio {
+//       font-size: 26px;
+//       line-height: 1.19;
+//     }
+//     .header__nav {
+//       margin: 0 0 0 93px;
+//     }
+//     .header__tel {
+//       font-size: 14px;
+//       line-height: 1.17;
+//       letter-spacing: 0.02em;
+//       margin-left: 30px;
+//     }
+//     .header__mail {
+//       padding-top: 0;
+//       font-size: 14px;
+//       line-height: 1.17;
+//       margin-bottom: 0;
+//     }
+//     .header__tel {
+//       padding-bottom: 0;
+//     }
+//     .header__menu {
+//       flex-direction: row;
+//     }
+//     .header__icon {
+//       margin-right: 10px;
+//     }
+//     .icon__mail {
+//       width: 16px;
+//       height: 12px;
+//     }
+//     .icon__tel {
+//       width: 10px;
+//       height: 16px;
+//     }
+//   }
+// }
+// .icon-menu {
+//   fill: $accent-text-color;
+// }
+
+// .primary,
+// .header__web {
+//   color: $accent-text-color;
+// }
+// .net {
+//   flex-wrap: wrap;
+
+//   font-size: 18px;
+//   line-height: 1.22;
+//   letter-spacing: 0.02em;
+//   color: $accent-text-color;
+
+//   // &__list {
+//   //   margin-bottom: 48px;
+//   // }
+//   &__item:not(:last-child) {
+//     margin-right: 10px;
+//     border-right: 1px solid rgba(33, 33, 33, 0.2);
+//     padding-right: 10px;
+//   }
+// }

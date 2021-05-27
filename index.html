@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Астрология</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__cont">
+        <div class="header__logo">
+          <a class="link logo__icon" href="./index.html"
+            ><svg width="60" height="60" aria-label="logo">
+              <use class="" href="./images/1/symbol-defs.svg#icon-taurus"></use>
+            </svg>
+          </a>
+          <button
+            class="mob__btn link"
+            type="button"
+            aria-expanded="false"
+            aria-controls="header__nav"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon__close"
+                href="./images/symbol-defs.svg#icon-close_40"
+              ></use>
+              <use
+                class="icon__menu"
+                href="./images/symbol-defs.svg#icon-menu_40"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="header__nav" id="header__nav" data-menu>
+          <ul class="list header__l">
+            <li class="headr__it">
+              <button class="link header__btn" type="button" data-open>
+                Ритмы планет
+              </button>
+              <ul class="header__list" data-ref>
+                <li class="header__i">
+                  <a class="link" href="#">Солнце</a>
+                </li>
+                <li><a class="link" href="#">Луна</a></li>
+                <li><a class="link" href="#">Меркурий</a></li>
+              </ul>
+            </li>
+            <li class="headr__it">
+              <button class="link header__btn" type="button">
+                Планеты сейчас
+              </button>
+            </li>
+            <li class="headr__it">
+              <button class="link header__btn" type="button">
+                Астропсихологическое влияние
+              </button>
+            </li>
+            <li class="headr__it">
+              <button class="link header__btn" type="button">Услуги</button>
+            </li>
+            <li class="headr__it">
+              <button class="link header__btn" type="button">Статьи</button>
+            </li>
+            <li class="headr__it">
+              <button class="link header__btn" type="button">Контакты</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="visually-hidden">Астрологический прогноз</h1>
+          <div class="hero__container"></div>
+          <p class="hero__content">
+            Текст который можно вставить и если надо ссылку куда надо
+          </p>
+        </div>
+      </section>
+      <section class="portfolio">
+        <div class="container">
+          <h1 class="visually-hidden">Главная</h1>
+
+          <ul class="portfolio__list list">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href=""
+                ><div class="portfolio__animation">
+                  <p class="portfolio__paragraph">
+                    Текст который надо вставить и если надо ссылку куда надо
+                  </p>
+
+                  <img
+                    src="./images/туман.jpg"
+                    alt="фото планет"
+                    width="370"
+                    height="500"
+                  />
+                </div>
+                <div class="portfolio__card">
+                  <h2 class="portfolio__name">Планеты</h2>
+                  <p class="portfolio__pos">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a class="portfolio__link" href=""
+                ><div class="portfolio__animation">
+                  <p class="portfolio__paragraph">
+                    Текст который надо вставить и если надо ссылку куда надо
+                  </p>
+
+                  <img
+                    src="./images/солнце.jpg"
+                    alt="фото солнце"
+                    width="370"
+                  />
+                </div>
+                <div class="portfolio__card">
+                  <h2 class="portfolio__name">Солнце с планетами</h2>
+                  <p class="portfolio__pos">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a class="portfolio__link" href=""
+                ><div class="portfolio__animation">
+                  <p class="portfolio__paragraph">
+                    Текст который надо вставить и если надо ссылку куда надо
+                  </p>
+
+                  <img
+                    src="./images/реконструк.jpg"
+                    alt="фото реконструкция"
+                    width="370"
+                    height="500"
+                  />
+                </div>
+                <div class="portfolio__card">
+                  <h2 class="portfolio__name">Реконструкция</h2>
+                  <p class="portfolio__pos">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a class="portfolio__link" href=""
+                ><div class="portfolio__animation">
+                  <p class="portfolio__paragraph">
+                    Текст который надо вставить и если надо ссылку куда надо
+                  </p>
+
+                  <img
+                    src="./images/комета.jpg"
+                    alt="фото комета"
+                    width="370"
+                  />
+                </div>
+                <div class="portfolio__card">
+                  <h2 class="portfolio__name">Комета</h2>
+                  <p class="portfolio__pos">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a class="portfolio__link" href=""
+                ><div class="portfolio__animation">
+                  <p class="portfolio__paragraph">
+                    Текст который надо вставить и если надо ссылку куда надо
+                  </p>
+
+                  <img
+                    src="./images/зодиак.jpg"
+                    alt="фото зодиак"
+                    width="370"
+                  />
+                </div>
+                <div class="portfolio__card">
+                  <h2 class="portfolio__name">Зодиак</h2>
+                  <p class="portfolio__pos">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a class="portfolio__link" href=""
+                ><div class="portfolio__animation">
+                  <p class="portfolio__paragraph">
+                    Текст который надо вставить и если надо ссылку куда надо
+                  </p>
+
+                  <img
+                    src="./images/вычислен.jpg"
+                    alt="фото вычисление"
+                    width="370"
+                  />
+                </div>
+                <div class="portfolio__card">
+                  <h2 class="portfolio__name">Вычисление орбит</h2>
+                  <p class="portfolio__pos">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Занятие -->
+      <section class="lessons">
+        <div class="container">
+          <h2 class="text">Чем занимаемся</h2>
+
+          <ul class="list lessons__list">
+            <li class="list__item position">
+              <img src="./images/взор.jpg" alt="фото рабочего места" />
+              <div class="lessons__tumb">
+                <h3 class="lessons__heiding">Десктопные приложения</h3>
+              </div>
+            </li>
+            <li class="list__item position">
+              <img src="./images/вселенная.jpg" alt="фото рабочего места" />
+              <div class="lessons__tumb">
+                <h3 class="lessons__heiding">Мобильные приложения</h3>
+              </div>
+            </li>
+            <li class="list__item position">
+              <img src="./images/работа.jpg" alt="фото рабочего места" />
+              <div class="lessons__tumb">
+                <h3 class="lessons__heiding">Дизайнерские решения</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Подвал -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__block">
+          <a class="link logo__icon" href="./index.html"
+            ><svg width="60" height="60" aria-label="logo">
+              <use class="" href="./images/1/symbol-defs.svg#icon-taurus"></use>
+            </svg>
+          </a>
+          <address class="footer__address">
+            <ul class="footer__list">
+              <li>
+                <a href="" class="footer__color link"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="footer__link link"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="footer__link link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__block">
+          <b class="footer__heiding">присоединяйтесь</b>
+          <ul class="team__list footer__list">
+            <li class="team__icon">
+              <a class="team__link footer__icon" href="">
+                <svg width="22" height="22">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team__icon">
+              <a class="team__link footer__icon" href="">
+                <svg width="22" height="22">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team__icon">
+              <a class="team__link footer__icon" href="">
+                <svg width="22" height="22">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team__icon">
+              <a class="team__link footer__icon" href="">
+                <svg class="icona" width="22" height="22">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <b class="footer__heiding">Подпишитесь на рассылку</b>
+          <div class="form">
+            <div class="form__field">
+              <label class="form__text" for="fmail"></label>
+              <input
+                class="form__input"
+                type="email"
+                name="subscription"
+                id="fmail"
+                placeholder="E-mail"
+              />
+            </div>
+            <button class="form__btn" type="submit">
+              Подписаться
+              <svg class="form__card" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+@mixin pad($top: 32px, $bot: 32px) {
+  padding-top: $top;
+  padding-bottom: $bot;
+}

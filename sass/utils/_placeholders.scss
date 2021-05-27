@@ -1,0 +1,22 @@
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%cont {
+  // max-width: 478px;
+  margin-left: auto;
+  margin-right: auto;
+}
+%btn {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px rgba(0, 0, 0, 0.15));
+  letter-spacing: 0.06em;
+  color: $primary-color;
+  background-color: $accent-text-color;
+}
